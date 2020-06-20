@@ -74,7 +74,7 @@ class Net(nn.Module):
 if __name__ == '__main__':
     ff = "./cifar_net.pth"
     net = Net()
-    #net.train()
+    net.train()
 
     net.load_state_dict(torch.load(ff))
 
